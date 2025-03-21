@@ -22,8 +22,6 @@
     tasks_from: app-pre-req
 
 - name: install npm dependencies
-  tasks:
-  - deployment
   ansible.builtin.command: npm install
   args:
     chdir: /app
